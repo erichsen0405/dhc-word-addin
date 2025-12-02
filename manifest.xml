@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="TaskPaneApp">
+  <Id>d0c9e7f1-4a82-4b17-9c3d-8e5f6a7b2c1d</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Danish Healthcare</ProviderName>
+  <DefaultLocale>da-DK</DefaultLocale>
+  <DisplayName DefaultValue="DHC Oversættelse"/>
+  <Description DefaultValue="Oversæt Word-dokumenter til andre sprog"/>
+  <IconUrl DefaultValue="https://thankful-ground-05d7f9210.3.azurestaticapps.net/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://thankful-ground-05d7f9210.3.azurestaticapps.net/icon-64.png"/>
+  <SupportUrl DefaultValue="https://www.danishhealthcare.dk"/>
+  
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://thankful-ground-05d7f9210.3.azurestaticapps.net/taskpane.html"/>
+  </DefaultSettings>
+  
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

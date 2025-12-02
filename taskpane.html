@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHC Oversættelse</title>
+    <link rel="stylesheet" href__="taskpane.css">
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/691431d05cfac7d7acfaf766/11907c741_Nyklver.png" alt="DHC Logo" class="logo">
+            <h1>Oversættelse</h1>
+        </header>
+        
+        <main>
+            <div class="section">
+                <label for="targetLanguage">Oversæt til:</label>
+                <select id="targetLanguage">
+                    <option value="">Vælg sprog...</option>
+                    <option value="Engelsk">Engelsk</option>
+                    <option value="Tysk">Tysk</option>
+                    <option value="Fransk">Fransk</option>
+                    <option value="Spansk">Spansk</option>
+                    <option value="Italiensk">Italiensk</option>
+                    <option value="Hollandsk">Hollandsk</option>
+                    <option value="Polsk">Polsk</option>
+                    <option value="Svensk">Svensk</option>
+                    <option value="Norsk">Norsk</option>
+                </select>
+            </div>
+            
+            <div class="section">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="translateSelection" checked>
+                    <label for="translateSelection">Kun markeret tekst</label>
+                </div>
+            </div>
+            
+            <button id="translateBtn" class="primary-btn">
+                <span class="btn-text">Oversæt</span>
+                <span class="btn-loading" style="display:none;">Oversætter...</span>
+            </button>
+            
+            <div id="status" class="status"></div>
+            
+            <div id="preview" class="preview" style="display:none;">
+                <h3>Forhåndsvisning</h3>
+                <div id="previewContent"></div>
+                <div class="preview-actions">
+                    <button id="applyBtn" class="primary-btn">Indsæt</button>
+                    <button id="cancelBtn" class="secondary-btn">Annuller</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="taskpane.js"></script>
+</body>
+</html>
